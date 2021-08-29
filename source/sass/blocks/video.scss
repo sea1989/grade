@@ -1,0 +1,94 @@
+.video {
+  background-image: linear-gradient(to bottom, $color-gradient 87%, $color-white 87%);
+  padding-top: 121px;
+
+  @media (max-width: $tablet-width-max) {
+    background-image: linear-gradient(to bottom, $color-gradient 81%, $color-white 81%);
+    padding-top: 70px;
+  }
+
+  @media (max-width: $mobile-width-max) {
+    background-image: linear-gradient(to bottom, $color-gradient 87%, $color-white 87%);
+    padding-top: 85px;
+  }
+}
+
+.video h2 {
+  color: $color-white;
+  margin: 0;
+}
+
+.video p {
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: 300;
+  color: $color-whiteopac07;
+  text-align: center;
+  width: 34%;
+  margin: 20px auto 56px auto;
+
+  @media (max-width: $tablet-width-max) {
+    width: 65%;
+    margin-bottom: 38px;
+  }
+
+  @media (max-width: $mobile-width-max) {
+    width: 100%;
+    margin-bottom: 55px;
+  }
+}
+
+.video__wrap {
+  position: relative;
+  width: 929px;
+  min-height: 522px;
+  margin: 0 auto;
+
+  @media (max-width: $tablet-width-max) {
+    width: 100%;
+    min-height: 282px;
+  }
+
+  @media (max-width: $mobile-width-max) {
+    width: 100%;
+    min-height: 161px;
+  }
+}
+
+.video__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 0 0;
+
+  @media (max-width: $tablet-width-max) {
+    padding: 0 17%;
+  }
+
+  @media (max-width: $mobile-width-max) {
+    padding: 0 16px;
+  }
+}
+
+.video__button {
+  position: absolute;
+  background-color: transparent;
+  border: none;
+  top: calc(50% - 36px);
+  left: calc(50% - 38px);
+  cursor: pointer;
+
+  svg {
+    width: 100%;
+    height: 100%;
+  }
+
+  &:hover,
+  &:focus {
+    transform: scale(1.2);
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+}

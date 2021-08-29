@@ -1,0 +1,150 @@
+.footer {
+  padding-top: 119px;
+  margin-bottom: 46px;
+
+  @media (max-width: $tablet-width-max) {
+    padding-top: 42px;
+    margin-bottom: 0;
+  }
+
+  @media (max-width: $mobile-width-max) {
+    padding-top: 44px;
+  }
+}
+
+.footer h2 {
+  @media (max-width: $mobile-width-max) {
+    font-size: 18px;
+  }
+}
+
+.footer p {
+  font-size: 17px;
+  line-height: 31px;
+  color: $color-blackopac07;
+  text-align: center;
+  width: 550px;
+  margin: 30px auto 38px auto;
+
+  @media (max-width: $tablet-width-max) {
+    margin-top: 20px;
+    margin-bottom: 18px;
+    width: 90%;
+  }
+
+  @media (max-width: $mobile-width-max) {
+    width: 80%;
+  }
+}
+
+.footer__map {
+  position: relative;
+  color: $color-white;
+  width: 957px;
+  height: 530px;
+  margin: auto;
+
+
+  @media (max-width: $tablet-width-max) {
+    width: 90%;
+    height: 545px;
+  }
+
+  @media (max-width: $mobile-width-max) {
+    width: 100%;
+    height: 250px;
+  }
+}
+
+.footer__map iframe {
+  position: absolute;
+  border: none;
+  width: 100%;
+  height: 100%;
+}
+
+.footer__map img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  margin: auto;
+}
+
+.footer__list {
+  @include no-list;
+  font-size: 16px;
+  line-height: 22px;
+  color: $color-blackopac05;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 40px auto;
+
+  @media (max-width: $tablet-width-max) {
+    margin-top: 22px;
+  }
+
+  @media (max-width: $mobile-width-max) {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 32px;
+    margin-bottom: 30px;
+  }
+}
+
+.footer__item {
+  margin-bottom: 10px;
+}
+
+.footer__item:not(:last-child) {
+  margin-right: 80px;
+
+  @media (max-width: $mobile-width-max) {
+    margin-right: 0;
+    margin-bottom: 25px;
+  }
+}
+
+.footer__link {
+  position: relative;
+  padding: 10px 10px 10px 39px;
+
+  @media (max-width: $mobile-width-max) {
+    padding-right: 0;
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    background-repeat: no-repeat;
+    background-position: left center;
+    left: 0;
+  }
+
+  &--mail {
+    &::before {
+      width: 26px;
+      height: 20px;
+      background-image: url("../img/icon-mail.svg");
+    }
+  }
+
+  &--phone {
+    &::before {
+      width: 21px;
+      height: 22px;
+      background-image: url("../img/icon-phone.svg");
+    }
+  }
+
+  &:hover,
+  &:focus {
+    color: $color-black;
+  }
+
+  &:active {
+    color: $color-blue;
+    opacity: 1;
+  }
+}

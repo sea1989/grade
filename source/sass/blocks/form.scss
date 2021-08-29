@@ -1,0 +1,87 @@
+.form {
+  @media (max-width: $tablet-width-max) {
+    padding-top: 70px;
+    margin: auto;
+  }
+}
+
+.form__title {
+  font-size: 17px;
+  line-height: 28px;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 5px;
+
+  @media (max-width: $tablet-width-max) {
+    font-size: 18px;
+    color: $color-black;
+    margin-top: 0;
+  }
+}
+
+.form__list {
+  @include no-list;
+  margin-top: 20px;
+
+  @media (max-width: $tablet-width-max) {
+    margin-top: 30px;
+  }
+
+  @media (max-width: $mobile-width-max) {
+    margin-top: 19px;
+  }
+}
+
+.form__item {
+  margin-bottom: 20px;
+}
+
+.form__item input {
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: 400;
+  color: $color-black;
+  border: 1px solid $color-borderlight;
+  border-radius: 4px;
+  padding: 12px 29px 10px 29px;
+  width: 100%;
+
+  @media (max-width: $tablet-width-max) {
+    padding-left: 22px;
+  }
+
+  @media (max-width: $mobile-width-max) {
+    padding-left: 24px;
+  }
+
+  &::placeholder {
+    color: $color-form;
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    border-color: $color-blue;
+  }
+}
+
+.form__btn {
+  font-size: 15px;
+  line-height: 21px;
+  font-weight: 600;
+  background-color: $color-blue;
+  border: 1px solid $color-blue;
+  border-radius: 4px;
+  width: 100%;
+  padding: 14px 20px;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: $color-borderlight;
+  }
+
+  &:active {
+    opacity: 0.8;
+  }
+}

@@ -1,0 +1,11 @@
+.main-title {
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 600;
+  color: $color-grayhard;
+  text-align: center;
+
+  @media (max-width: $tablet-width-max) {
+    font-size: 24px;
+  }
+}
