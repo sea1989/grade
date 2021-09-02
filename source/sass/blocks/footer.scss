@@ -13,6 +13,16 @@
 }
 
 .footer h2 {
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 600;
+  color: $color-grayhard;
+  text-align: center;
+
+  @media (max-width: $tablet-width-max) {
+    font-size: 24px;
+  }
+
   @media (max-width: $mobile-width-max) {
     font-size: 18px;
   }
@@ -43,7 +53,6 @@
   width: 957px;
   height: 530px;
   margin: auto;
-
 
   @media (max-width: $tablet-width-max) {
     width: 90%;
