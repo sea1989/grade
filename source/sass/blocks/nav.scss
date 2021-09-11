@@ -28,7 +28,7 @@
   transform: translate(-50%);
   border-bottom: 1px solid $color-border;
   display: flex;
-  justify-content: space-between;
+  justify-content: start;
   flex-wrap: wrap;
   width: 873px;
   padding: 0 20px;
@@ -95,8 +95,10 @@
 .nav__item {
   position: relative;
   cursor: pointer;
+  padding-left: 134px;
 
   @media (max-width: $tablet-width-max) {
+    padding-left: 0px;
     margin-top: 30px;
     background-color: $color-backgroundnav;
 
@@ -112,6 +114,11 @@
       bottom: 25px;
     }
   }
+}
+
+.nav__item--first {
+  padding-left: 0px;
+
 }
 
 .nav__link {

@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <title>Велики</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Самые топ велики в РФ онлайн дорого" />
   <meta name="format-detection" content="telephone=no">
   <link rel="preload" href="fonts/opensans-light.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <link rel="preload" href="fonts/opensans-regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
@@ -21,7 +22,7 @@
     <nav class="nav nav--open nav--nojs">
       <button class="nav__toggle" type="button" aria-label="Открыть меню"></button>
       <ul class="nav__list">
-        <li class="nav__item">
+        <li class="nav__item nav__item--first">
           <a class="nav__link" href="#about">О нас</a>
         </li>
         <li class="nav__item">
@@ -56,8 +57,7 @@
             <li class="form__item">
               <label class="visually-hidden" for="phone">Введите Ваш номер телефона</label>
               <input type="tel" data-mask="+7 (000) 000-00-00" id="phone" name="phone"
-                placeholder="Введите Ваш номер телефона" title="(000) 000-00-00"
-                pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{10}$" required="">
+                placeholder="Введите Ваш номер телефона" title="(000) 000-00-00" required="">
             </li>
           </ul>
           <button class="form__btn" type="submit">Подобрать велосипед мечты</button>
@@ -81,41 +81,46 @@
         <h2>Виды велосипедов</h2>
         <ul class="production__list">
           <li>
-            <div class="production__img production__img--bike">
-              <picture>
-                <!-- 1х: 342px; 2x: 684px -->
-                <source srcset="img/road-bike@1x.webp 1x, img/road-bike@2x.webp 2x" type="image/webp">
-                <!-- 1х: 342px; 2x: 684px --><img src="img/road-bike@1x.jpg" srcset="img/road-bike@2x.jpg 2x"
-                  width="342" height="503" alt="Фото дорожного велосипеда">
-              </picture>
-            </div>
+
             <a href="#">
+
+              <div class="production__img production__img--bike">
+                <picture>
+                  <!-- 1х: 342px; 2x: 684px -->
+                  <source srcset="img/road-bike@1x.webp 1x, img/road-bike@2x.webp 2x" type="image/webp">
+                  <!-- 1х: 342px; 2x: 684px --><img src="img/road-bike@1x.jpg" srcset="img/road-bike@2x.jpg 2x"
+                    width="342" height="503" alt="Фото дорожного велосипеда">
+                </picture>
+              </div>
+
               <h3>Дорожный велосипед</h3>
             </a>
           </li>
           <li>
-            <div class="production__img production__img--montain">
-              <picture>
-                <!-- 1х: 342px; 2x: 684px -->
-                <source srcset="img/montain-bike@1x.webp 1x, img/montain-bike@2x.webp 2x" type="image/webp">
-                <!-- 1х: 342px; 2x: 684px --><img src="img/montain-bike@1x.jpg" srcset="img/montain-bike@2x.jpg 2x"
-                  width="342" height="566" alt="Фото горного велосипеда">
-              </picture>
-            </div>
             <a href="#">
+              <div class="production__img production__img--montain">
+                <picture>
+                  <!-- 1х: 342px; 2x: 684px -->
+                  <source srcset="img/montain-bike@1x.webp 1x, img/montain-bike@2x.webp 2x" type="image/webp">
+                  <!-- 1х: 342px; 2x: 684px --><img src="img/montain-bike@1x.jpg" srcset="img/montain-bike@2x.jpg 2x"
+                    width="342" height="566" alt="Фото горного велосипеда">
+                </picture>
+              </div>
+
               <h3>Горный велосипед</h3>
             </a>
           </li>
           <li>
-            <div class="production__img production__img--children">
-              <picture>
-                <!-- 1х: 342px; 2x: 684px -->
-                <source srcset="img/children-bike@1x.webp 1x, img/children-bike@2x.webp 2x" type="image/webp">
-                <!-- 1х: 342px; 2x: 684px --><img src="img/children-bike@1x.jpg" srcset="img/children-bike@2x.jpg 2x"
-                  width="342" height="513" alt="Фото деского велосипеда">
-              </picture>
-            </div>
             <a href="#">
+              <div class="production__img production__img--children">
+                <picture>
+                  <!-- 1х: 342px; 2x: 684px -->
+                  <source srcset="img/children-bike@1x.webp 1x, img/children-bike@2x.webp 2x" type="image/webp">
+                  <!-- 1х: 342px; 2x: 684px --><img src="img/children-bike@1x.jpg" srcset="img/children-bike@2x.jpg 2x"
+                    width="342" height="513" alt="Фото деского велосипеда">
+                </picture>
+              </div>
+
               <h3>Детский велосипед</h3>
             </a>
           </li>

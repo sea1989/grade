@@ -89,6 +89,10 @@
   top: calc(50% - 36px);
   left: calc(50% - 38px);
   cursor: pointer;
+  padding: 0px;
+  display: block;
+  width: 65px;
+  height: 65px;
 
   svg {
     width: 100%;
